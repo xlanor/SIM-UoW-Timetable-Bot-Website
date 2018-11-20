@@ -24,14 +24,14 @@ export default class AppFooter extends React.Component {
                 For keeping me sane:
             </div>
             <div id="footer-text-div-3">
-                Chen Xiao Bin • Jayner Tan • Alvin Heng • Jing Ying Yeo
+                Xiao Bin Chen • Jayner Tan • Alvin Heng • Jing Ying Yeo
             </div>
             <br/>
             <div id="footer-text-div-4">
-                Thanks to my testers:
+                Testers:
             </div>
             <div id ="footer-text-div-bottom">
-                Liew Ray Keeve (UB) • Joey Yee (UOB) • See Yi Ze (UOL) • Celeste Teo (UOW) • Vinny (UOW) • Vanessa (UOB)
+                Ray Keeve(UB) • Joey Yee (UOB) • Yi Ze See (UOL) • Celeste Teo (UOW) • Vinny (UOW) • Vanessa (UOB)
             </div>
         </div>
       );
