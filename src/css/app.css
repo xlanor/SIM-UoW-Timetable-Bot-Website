@@ -26,13 +26,13 @@ body{
 }
 #header-text-group{
     padding-top: 5%;
-    padding-left:20%;
+    padding-left:10%;
     padding-bottom:5%;
 }
 .header-text{
     max-width: 30%;
 }
-#gh_link:visited{
+a:visited{
     color:pink;
 }
 /* End header related css declarations */
@@ -44,8 +44,8 @@ body{
     color:white;
 }
 .wrapper-div{
-    height:950px;
-    width: 50%;
+    height:400px;
+    width: 25%;
     float: left;
     
 }
@@ -61,27 +61,66 @@ body{
 }
 .overlay-text{
     position: relative;
-    text-align: center;
-    padding: 45% 25% ;
+    padding: 15%;
+    margin-right: 5%;
 }
 .overlay-head{
     font-size: 2em;
+    text-align: center;
 }
 .overlay-subtext{
     font-size: 0.7em;
 }
-video{
-    position: absolute;
-    width: 45%;
+.autoplayVideo{
+    position: absolute; 
+    width:21%;
     -webkit-filter: blur(20px)  brightness(60%);
     filter: blur(20px)  brightness(60%);
+    overflow: hidden;
 }
-video:hover{
+.autoplayVideo:hover{
     -webkit-filter:none;
     filter: none;
 }
 
 /* End body related css declarations */
+
+/* Begin license related css declarations */
+#license-div{
+    float:none;
+    clear: both;
+    padding-top:5%;
+    background-color: #131A1C;
+    color: white;
+    font-family: Raleway;
+}
+#license-text-header{
+    font-size: 3em;
+}
+#license-text{
+    padding-top:6%;
+    width:25%;
+    padding-left:10%;
+    float:left
+}
+#license-text-divider{
+
+    width: auto;
+    margin-right: 20%;
+    border: none;
+    background-color: #a1a3a3;
+    color: #a1a3a3;
+    height: 2px;
+}
+#license-image{
+    width:47%;
+    float:left;
+    padding-left:7.5%;
+}
+#agplv3{
+    max-width: 100%;
+}
+/* End license related css declarations*/
 /* Begin footer related css declarations */
 #footer-div{
     float: none;
