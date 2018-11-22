@@ -17,21 +17,17 @@ export default class AppFooter extends React.Component {
             </div>
             <hr className="footer-divider" />
             <div id="footer-text-div">
-                © 2017-{new Date().getFullYear()} Jing Kai Tan (xlanor)
+                © 2017-{new Date().getFullYear()} Jing Kai Tan (xlanor).
             </div>
             <br/>
-            <div id="footer-text-div-2">
-                For keeping me sane:
-            </div>
-            <div id="footer-text-div-3">
-                Xiao Bin Chen • Jayner Tan • Alvin Heng • Jing Ying Yeo
-            </div>
-            <br/>
-            <div id="footer-text-div-4">
-                Testers:
-            </div>
             <div id ="footer-text-div-bottom">
-                Ray Keeve(UB) • Joey Yee (UOB) • Yi Ze See (UOL) • Celeste Teo (UOW) • Vinny (UOW) • Vanessa (UOB)
+                <a href="https://github.com/alvarotrigo/react-fullpage" alt="fullpage">FullPageJS</a>
+                &nbsp;•&nbsp;
+                <a href="https://reactjs.org/" alt="react">ReactJS</a>
+                &nbsp;•&nbsp;
+                <a href="https://babeljs.io" alt="babel">BabelJS</a>
+                &nbsp;•&nbsp;
+                <a href="https://webpack.js.org/" alt="Webpack">Webpack</a>
             </div>
         </div>
       );

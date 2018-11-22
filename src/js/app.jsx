@@ -1,18 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppHeader from './components/Header';
 import AppFooter from './components/Footer';
+import AppHeader from './components/Header';
 import Pictures from './components/Pictures';
-import License from './components/License';
+import FullpageWrapper from './components/FullPage';
 import '../css/app.css';
+
+const fullpageOptions = {
+  licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+  anchors: ["About", "Features", "License"],
+  sectionsColor: ["#282c34", "#282c34", "#282c34"],
+  callbacks: ["onLeave", "afterLoad"],
+  scrollOverflow: true
+};
 
 class App extends React.Component {
     render() {
       return (
           <div>
+            < FullpageWrapper {...fullpageOptions} />
             < AppHeader />
-            < Pictures />
-            < License />
             < AppFooter />
           </div>
       );

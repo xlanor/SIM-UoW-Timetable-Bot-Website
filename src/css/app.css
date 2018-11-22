@@ -1,41 +1,75 @@
 @import url("../css/fonts.css");
 body{
-    background-color:#131A1C;
+    background-color:#282c34;
     margin: 0;
 }
 /* Begin header related css declarations */
 #header-div{
-    background-color: #131A1C;
+
+    float: none;
+    clear: both;
+    background-color: transparent;
+    color: white;
+    font-family: Raleway;
+    position: fixed;
+    Width: 100%;
+    top: 0;
+    margin-left:60%;
+    margin-top:2%;
+}
+#anchor_link{
+    color: #a1a3a3;
+    text-decoration: none;
+}
+#navigation-div{
+    float:left;
+    margin-left: 2%;
+}
+/* End header related css declarations */
+/* Begin main-page related css declarations */
+#main-page-div{
+    background-color: #282c34;
     color: white;
     font-family: Raleway;
 }
-#header-split{
+#main-page-split{
     width: auto;
-    margin-right: 86.5%;
+    margin-right: 65.5%;
     border: none;
     background-color: #a1a3a3;
     color: #a1a3a3;
     height: 2px;
 }
-#header-title{
+#main-page-title{
     font-size: 5em;
 }
-.header-sub-text{
+.main-page-sub-text{
     color: #a1a2a3;
     font-size: 0.8em;
 }
-#header-text-group{
-    padding-top: 5%;
+#main-page-text-group{
+    float: left;
+    max-width: 30%;
+    padding-top: 7%;
     padding-left:10%;
     padding-bottom:5%;
 }
-.header-text{
-    max-width: 30%;
+a:link{
+    color: pink;
 }
 a:visited{
     color:pink;
 }
-/* End header related css declarations */
+#main-page-image{
+    float: left;
+    max-width: 45%;
+    padding-left:5%;
+    padding-bottom:5%;
+}
+#ipad_image{
+    max-width: 100%;
+}
+/* End main-page related css declarations */
 /* Begin body related css declarations */
 #pictures-div{
     margin-left:5%;
@@ -44,23 +78,12 @@ a:visited{
     color:white;
 }
 .wrapper-div{
-    height:400px;
-    width: 25%;
-    float: left;
+    font-family: Raleway;
+    color:white;
     
 }
-.wrapper-div:hover video:not(:hover){
-    -webkit-filter:none;
-    filter: none;
-}
-.wrapper-div:hover div:not(:hover){
-    display: none;
-}
-.wrapper-div:hover hr:not(:hover){
-    display: none;
-}
 .overlay-text{
-    position: relative;
+    float: left;
     padding: 15%;
     margin-right: 5%;
 }
@@ -73,8 +96,10 @@ a:visited{
     font-size: 0.7em;
 }
 .autoplayVideo{
-    position: absolute; 
-    width:21%;
+    float: left;
+    max-width: 30%;
+    padding-left:15%;
+    padding-top: 5%;
     -webkit-filter: blur(20px)  brightness(60%);
     filter: blur(20px)  brightness(60%);
     overflow: hidden;
@@ -90,33 +115,32 @@ a:visited{
 #license-div{
     float:none;
     clear: both;
-    padding-top:5%;
-    background-color: #131A1C;
+    background-color: #282c34;
     color: white;
     font-family: Raleway;
+    padding-bottom: 25%;
 }
 #license-text-header{
     font-size: 3em;
 }
 #license-text{
-    padding-top:6%;
-    width:25%;
+    width:30%;
     padding-left:10%;
     float:left
 }
 #license-text-divider{
 
     width: auto;
-    margin-right: 20%;
+    margin-right: 42%;
     border: none;
     background-color: #a1a3a3;
     color: #a1a3a3;
     height: 2px;
 }
 #license-image{
-    width:47%;
+    width:35%;
     float:left;
-    padding-left:7.5%;
+    padding-left:12%;
 }
 #agplv3{
     max-width: 100%;
@@ -126,17 +150,20 @@ a:visited{
 #footer-div{
     float: none;
     clear: both;
-    background-color: #131A1C;
+    background-color:transparent;
     color: #a1a3a3;
     font-family: Raleway;
     font-size: 0.7em;
+    position: fixed;
+    Width: 100%;
+    bottom: 0;
 }
 #logo-div{
     padding-top: 2%;
 }
 .footer-divider{
     width: auto;
-    margin: 0.5% 40%;
+    margin: 0.5% 47%;
     border: none;
     background-color: #a1a3a3;
     color: #a1a3a3;
