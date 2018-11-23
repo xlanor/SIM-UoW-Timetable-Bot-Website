@@ -26,9 +26,10 @@ The **telegram bot** (which does not interface with the website in any way) is l
 - css-loader
 - axios
 - react-fullpage
+- react-slick
 
 ### Setup
-- npm i axios webpack webpack-dev-server webpack-cli @fullpage/react-fullpage react react-dom babel-loader @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators html-webpack-plugin html-loader style-loader css-loader --save-dev
+- npm i axios webpack webpack-dev-server webpack-cli @fullpage/react-fullpage react react-dom babel-loader @babel/core @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators html-webpack-plugin html-loader style-loader css-loader react-slick --save-dev
 
 ### Icons
 * [Github logo](https://www.iconsdb.com/white-icons/github-10-icon.html)

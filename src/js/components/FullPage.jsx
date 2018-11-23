@@ -3,14 +3,15 @@ import React from "react";
 import AppMainPage from './AppMainPage';
 import License from './License';
 import Pictures from './Pictures';
+import SimpleSlider from './TestimonialCarousel';
 import PictureElement from './PictureElement';
 import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
 const videoDetails = [
   {
       "title":"Scrollable Timetable",
-      "mp4":"../src/videos/scrollable_timetable.mp4",
-      "webm":"../src/videos/scrollable_timetable.webm",
+      "mp4":"../src/videos/scrollable_timetable_cropped.mp4",
+      "webm":"../src/videos/scrollable_timetable_cropped.webm",
       "bullet_points":[
         "Pulls all timetables from SIMConnect",
         "Inline scrolling with Telegram"
@@ -23,8 +24,8 @@ const videoDetails = [
   },
   {
     "title":"Daily Alerts",
-    "mp4":"../src/videos/notification_alert.mp4",
-    "webm":"../src/videos/notification_alert.webm",
+    "mp4":"../src/videos/notification_alert_cropped.mp4",
+    "webm":"../src/videos/notification_alert_cropped.webm",
     "bullet_points":[
       "Notifications at 8am and 10pm every day.",
       "Provide details of upcoming classes",
@@ -36,8 +37,8 @@ const videoDetails = [
   },
   {
     "title":"Chatbot Signup",
-    "mp4":"../src/videos/signup_tt_v2.mp4",
-    "webm":"../src/videos/signup_tt_v2.webm",
+    "mp4":"../src/videos/signup_tt_v2_cropped.mp4",
+    "webm":"../src/videos/signup_tt_v2_cropped.webm",
     "bullet_points":[
       "Talk to get started",
       "Comprehensive documentation on Github"
@@ -49,15 +50,18 @@ const videoDetails = [
     "mp4":"../src/videos/sim_navigation.mp4",
     "webm":"../src/videos/sim_navigation.webm",
     "bullet_points":[
-      "No more suffering with an interface clearly not designed for mobile"
+      "No more suffering with an interface clearly not designed for mobile",
+      "Data is cached locally in mongoDB",
+      "JSON endpoints with JWT authentication is being considered"
     ],
     "sub_text":[]
   }
 ]
+
+
 const getVideo = () =>{
    let return_array = []
    for(let i=0; i < videoDetails.length; i++){
-    {console.log(videoDetails[i].title)}
       return_array.push(<PictureElement
           key = {i}
           title={videoDetails[i].title} 
@@ -69,6 +73,7 @@ const getVideo = () =>{
    }
    return return_array;
 }
+
 const FullpageWrapper = fullpageProps => (
   <ReactFullpage
     {...fullpageProps}
@@ -89,6 +94,9 @@ const FullpageWrapper = fullpageProps => (
           </div>
           <div className="section">
             < License />
+          </div>
+          <div className="section">
+            < SimpleSlider />
           </div>
         </div>
       );

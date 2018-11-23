@@ -27,11 +27,16 @@ export default class PictureElement extends React.Component {
         return(
             <div className="slide">
                 <div className="wrapper-div">
-                    <video className="autoplayVideo" data-autoplay autoPlay loop muted>
-                        <source src={this.props.mp4} type="video/mp4"/>
-                        <source src={this.props.webm} type="video/webm"/>
-                        <p className="warning">Your browser does not support HTML5 video.</p>
-                    </video>
+                    <div className="videoCont">
+                        <video className="autoplayVideo" data-autoplay autoPlay loop muted>
+                            <source src={this.props.mp4} type="video/mp4"/>
+                            <source src={this.props.webm} type="video/webm"/>
+                            <p className="warning">Your browser does not support HTML5 video.</p>
+                        </video>
+
+                       
+                    </div>
+                   
                     <div className="overlay-text">
                         <div className="overlay-head">
                             <b>{this.props.title}</b>

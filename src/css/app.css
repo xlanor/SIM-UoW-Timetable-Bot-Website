@@ -34,7 +34,7 @@ body{
 }
 #main-page-split{
     width: auto;
-    margin-right: 65.5%;
+    margin-right: 60.5%;
     border: none;
     background-color: #a1a3a3;
     color: #a1a3a3;
@@ -83,23 +83,31 @@ a:visited{
     
 }
 .overlay-text{
+    margin-top: 15%;
     float: left;
-    padding: 15%;
     margin-right: 5%;
+    width: 25%;
+    margin-left:10%;
 }
 .overlay-head{
     font-size: 2em;
     text-align: center;
 }
+.overlay-body{
+    padding-left:10%;
+}
 .overlay-subtext{
-    padding-top: 25%;
+    font-style: italic;
+    padding-left:10%;
+    padding-top: 10%;
     font-size: 0.7em;
 }
 .autoplayVideo{
     float: left;
     max-width: 30%;
-    padding-left:15%;
-    padding-top: 5%;
+    margin-left:15%;
+    margin-top: 5%;
+    margin-bottom: 10%;
     -webkit-filter: blur(20px)  brightness(60%);
     filter: blur(20px)  brightness(60%);
     overflow: hidden;
@@ -141,6 +149,7 @@ a:visited{
     width:35%;
     float:left;
     padding-left:12%;
+    padding-top:4%;
 }
 #agplv3{
     max-width: 100%;
@@ -176,3 +185,39 @@ a:visited{
     margin-right: 0.3%;
 }
 /* End footer related css declarations */
+/* Begin testimonial related css declarations */
+.slick-wrapper{
+    margin-left:20%;
+    margin-right:20%;
+}
+.user-image-wrapper{
+    width:400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+    float: left;
+}
+.user-image{
+    width:400px;
+    height: auto;
+}
+.user-testimonial{
+    width:50%;
+    float: left;
+}
+.user-testimonial{
+    color: white;
+    font-family: Raleway;
+    margin-left:10%;
+    margin-top:5%;
+}
+.user-testimonial-name{
+    font-size: 3em;
+}
+.user-testimonial-faculty{
+    color: #a1a3a3;
+
+}
+/* End testimonial related css declarations */
