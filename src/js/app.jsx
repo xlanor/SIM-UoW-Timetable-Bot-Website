@@ -4,23 +4,20 @@ import AppFooter from './components/Footer';
 import AppHeader from './components/Header';
 import FullpageWrapper from './components/FullPage';
 import '../css/app.css';
+import { Provider } from 'react-redux';
+import store from './store';
 
-const fullpageOptions = {
-  licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-  anchors: ["About", "Features", "License","Testimonial"],
-  sectionsColor: ["#282c34", "#282c34", "#282c34"],
-  callbacks: ["onLeave", "afterLoad"],
-  scrollOverflow: true
-};
 
 class App extends React.Component {
     render() {
       return (
+        <Provider store={store}>
           <div>
-            < FullpageWrapper {...fullpageOptions} />
+            < FullpageWrapper />
             < AppHeader />
             < AppFooter />
           </div>
+        </Provider>
       );
     }
   }

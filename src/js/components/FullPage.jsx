@@ -7,6 +7,8 @@ import SimpleSlider from './TestimonialCarousel';
 import PictureElement from './PictureElement';
 import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
+import { connect } from 'react-redux';
+
 const videoDetails = [
   {
       "title":"Scrollable Timetable",
@@ -74,35 +76,78 @@ const getVideo = () =>{
    return return_array;
 }
 
-const FullpageWrapper = fullpageProps => (
-  <ReactFullpage
-    {...fullpageProps}
-    render={({ state }) => {
-      let video_details = getVideo();
-      if (state.callback === "onLeave") {
-        if (state.direction === "down") {
-          console.log("going down..." + state.origin.index);
-        }
-      }
-      return (
-        <div id="fullpage-wrapper">
-          <div className="section section1">
-            < AppMainPage />
-          </div>
-          <div className="section">
-            {video_details}
-          </div>
-          <div className="section">
-            < License />
-          </div>
-          <div className="section">
-            < SimpleSlider />
-          </div>
-        </div>
-      );
-    }}
-  />
-);
+
+
+const activateUnderline = (index) =>{
+    switch(index){
+      case 1:
+              break;
+      case 2:
+              break;
+      case 3:
+              break;
+      case 4:
+              break;
+      case 5: 
+      default: break;
+    }
+
+}
+const fullpageProps = {
+  licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+  anchors: ["About", "Features", "License","Testimonial"],
+  sectionsColor: ["#282c34", "#282c34", "#282c34"],
+  callbacks: ["onLeave", "afterLoad"],
+  scrollOverflow: true
+};
+
+
+@connect((store) => {
+  return {
+      toggle: store.header_underline.toggle,
+  };
+})
+
+class FullpageWrapper extends React.Component {
+
+  render() {
+    return (
+      <ReactFullpage
+          {...fullpageProps}
+          onLeave={(origin, destination, direction) => {
+            console.log("onLeave event", { origin, destination, direction });
+          }}
+          render={({ state ,fullpageApi}) => {
+            let video_details = getVideo();
+            console.log("render prop change", state);
+            if (state.callback === "onLeave") {
+              console.log(state.callback);
+              
+              if (state.direction === "down") {
+                console.log("going down..." + state.origin.index);
+              }
+            }
+            return (
+              <div id="fullpage-wrapper">
+                <div data-menuanchor="About" className="section section1">
+                  < AppMainPage />
+                </div>
+                <div data-menuanchor="Features" className="section">
+                  {video_details}
+                </div>
+                <div  data-menuanchor="License" className="section">
+                  < License />
+                </div>
+                <div  data-menuanchor="Testimonial"  className="section">
+                  < SimpleSlider />
+                </div>
+              </div>
+            );
+          }}
+        />
+    );
+  }
+}
 
 
 

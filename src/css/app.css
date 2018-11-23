@@ -25,6 +25,9 @@ body{
     float:left;
     margin-left: 2%;
 }
+.header_anchors_identifiers{
+    color: pink;
+}
 /* End header related css declarations */
 /* Begin main-page related css declarations */
 #main-page-div{
@@ -218,6 +221,5 @@ a:visited{
 }
 .user-testimonial-faculty{
     color: #a1a3a3;
-
 }
 /* End testimonial related css declarations */

@@ -9,11 +9,11 @@ const getTextFromArray = (array_to_get_text,is_subtext)=>{
         }
         return_string += array_to_get_text[i]
         if(is_subtext){
-            return_array.push(<span>{return_string}</span>)
-            return_array.push(<br/>)
+            return_array.push(<span key={return_string}>{return_string}</span>)
+            return_array.push(<br key={i+return_string}/>)
         }else{
-            return_array.push(<i>{return_string}</i>)
-            return_array.push(<br/>)
+            return_array.push(<i key={return_string}>{return_string}</i>)
+            return_array.push(<br key={i+return_string}/>)
         }
     }
     return return_array;

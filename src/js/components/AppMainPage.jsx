@@ -9,7 +9,6 @@ export default class AppMainPage extends React.Component {
         }
         
     }
-
     componentDidMount(){
         this.getVersion(this);
     }
@@ -29,6 +28,7 @@ export default class AppMainPage extends React.Component {
                 });
         return version;
     }
+   
     render() {
       
       return (
