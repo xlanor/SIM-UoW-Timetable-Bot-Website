@@ -18,6 +18,7 @@ const getTextFromArray = (array_to_get_text,is_subtext)=>{
     }
     return return_array;
 }
+
 export default class PictureElement extends React.Component {
     constructor(props){
         super(props);

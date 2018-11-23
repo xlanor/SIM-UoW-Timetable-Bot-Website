@@ -1,15 +1,16 @@
 import { TOGGLE_ACTIONS } from './Actions';
 
 const INITIAL_STATE = {
-    enabled: false
+    name: "About"
 }
 export default function reducer(state=INITIAL_STATE, action) {
     switch (action.type) {
         case TOGGLE_ACTIONS.toggle:{
-                                        var toggle = !(state.enabled)
+
+                                        console.log(action.payload.name)
                                         return {
                                             ...state,
-                                            enabled: toggle
+                                            name: action.payload.name
                                         }
                                     }
         default: return state;

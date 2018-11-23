@@ -7,7 +7,7 @@ const testimonial_dict = {
         "full_name": "Joey Yee",
         "image": "../src/images/users/joey.jpg",
         "faculty": "University of Southampton",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "text": "I’ve always disliked logging into SIMConnect to check my time table because the password is lengthy and troublesome. This telegram bot actually eases my convenience by allowing me to check my timetable with a click of a button! Now, i no longer have to waste time to check my time table!"
     },
     "Ray" : {
         "full_name": "Liew Ray Keeve",

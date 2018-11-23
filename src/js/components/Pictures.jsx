@@ -4,54 +4,7 @@ export default class Pictures extends React.Component {
     
 
     render() {
-      const videoDetails =[
-          {
-              "title":"Scrollable Timetable",
-              "mp4":"../src/videos/scrollable_timetable.mp4",
-              "webm":"../src/videos/scrollable_timetable.webm",
-              "bullet_points":[
-                "Pulls all timetables from SIMConnect",
-                "Inline scrolling with Telegram"
-              ],
-              "sub_text":[
-                  "* All timetables only includes classes and IS timetables",
-                  "** Subject to Telegram rate limits",
-                  "*** Does NOT automatically update"
-              ]
-          },
-          {
-            "title":"Daily Alerts",
-            "mp4":"../src/videos/notification_alert.mp4",
-            "webm":"../src/videos/notification_alert.webm",
-            "bullet_points":[
-              "Notifications at 8am and 10pm every day.",
-              "Provide details of upcoming classes",
-              "Never miss another class again!"
-            ],
-            "sub_text":[
-                "* Does not guarantee a safeguard against oversleeping"
-            ]
-          },
-          {
-            "title":"Chatbot Signup",
-            "mp4":"../src/videos/signup_tt_v2.mp4",
-            "webm":"../src/videos/signup_tt_v2.webm",
-            "bullet_points":[
-              "Talk to get started",
-              "Comprehensive documentation on Github"
-            ],
-            "sub_text":[]
-          },
-          {
-            "title":"Reduced Complexity",
-            "mp4":"../src/videos/sim_navigation.mp4",
-            "webm":"../src/videos/sim_navigation.webm",
-            "bullet_points":[
-              "No more suffering with an interface clearly not designed for mobile"
-            ],
-            "sub_text":[]
-          }
-      ]
+      
       return (
         <div id="pictures-div">
             <div className="wrapper-div">

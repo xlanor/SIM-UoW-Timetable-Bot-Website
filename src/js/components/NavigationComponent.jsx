@@ -1,11 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
-@connect((store) => {
-    return {
-        toggle: store.header_underline.toggle,
-    };
-})
+
   
 
 export default class NavigationComponent extends React.Component {

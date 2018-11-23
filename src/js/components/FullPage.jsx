@@ -8,6 +8,7 @@ import PictureElement from './PictureElement';
 import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
 import { connect } from 'react-redux';
+import { switchHeader } from '../actions/UpdateHeaders';
 
 const videoDetails = [
   {
@@ -78,17 +79,18 @@ const getVideo = () =>{
 
 
 
-const activateUnderline = (index) =>{
+const activateUnderline = (props, index) =>{
+    console.log(index)
     switch(index){
-      case 1:
+      case 0: props.dispatch(switchHeader("About"))
               break;
-      case 2:
+      case 1: props.dispatch(switchHeader("Features"))
               break;
-      case 3:
+      case  2:props.dispatch(switchHeader("License"))
               break;
-      case 4:
+      case 3:props.dispatch(switchHeader("Testimonials"))
               break;
-      case 5: 
+      case 4: props.dispatch(switchHeader("Github"))
       default: break;
     }
 
@@ -104,25 +106,25 @@ const fullpageProps = {
 
 @connect((store) => {
   return {
-      toggle: store.header_underline.toggle,
+    name: store.header_underline.name,
   };
 })
 
 class FullpageWrapper extends React.Component {
-
+  constructor(props){
+    super(props);
+  }
   render() {
     return (
       <ReactFullpage
           {...fullpageProps}
           onLeave={(origin, destination, direction) => {
             console.log("onLeave event", { origin, destination, direction });
+            activateUnderline(this.props,destination.index)
           }}
           render={({ state ,fullpageApi}) => {
             let video_details = getVideo();
-            console.log("render prop change", state);
             if (state.callback === "onLeave") {
-              console.log(state.callback);
-              
               if (state.direction === "down") {
                 console.log("going down..." + state.origin.index);
               }
