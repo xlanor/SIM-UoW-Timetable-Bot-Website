@@ -1,4 +1,12 @@
-# WORK IN PROGRESS
+# Hera (Website) W.I.P [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
+
+A website to introduce the timetable bot.
+
+### LICENSE
+
+The **website** is licensed under GPLv3 to comply with fullPage.js licensing restrictions.
+
+The **telegram bot** (which does not interface with the website in any way) is licensed under AGPLv3.
 
 #### Dependencies
 - webpack
