@@ -28,6 +28,10 @@ export default class AppFooter extends React.Component {
                 <a href="https://babeljs.io" alt="babel">BabelJS</a>
                 &nbsp;•&nbsp;
                 <a href="https://webpack.js.org/" alt="Webpack">Webpack</a>
+                &nbsp;•&nbsp;
+                <a href="https://redux.js.org/" alt="Redux">Redux</a>
+                &nbsp;•&nbsp;
+                <a href="https://github.com/xlanor/SIM-UoW-Timetable-Bot-Website" alt="Redux">Source Code</a>
             </div>
         </div>
       );
