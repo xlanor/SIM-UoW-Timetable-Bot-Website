@@ -13,7 +13,19 @@ const testimonial_dict = {
         "full_name": "Liew Ray Keeve",
         "image": "../src/images/users/ray.jpg",
         "faculty": "University of Buffalo",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "text": "Hera is an ingenious creation that directly tackled the inconvenience of student's needing to log in to the portal weekly to look for their timetables. It made my school life easier all I needed to do was to look at my phone every day and Hera would send me accurately my classes for that day."
+    },
+    "Vanessa":{
+        "full_name":"Vanessa",
+        "image": "../src/images/users/vanessa.jpg",
+        "faculty": "University of Birmmingham",
+        "text":"Before using the telegram bot, I always had to login to SIMConnect  weekly to check my timetable and screenshot it in case I forget my schedule. These screenshots often get lost in my other photos and I have to log back into SIMConnect - again! Thank you for saving me from all the hassle!"
+    },
+    "Danial":{
+        "full_name":"Izz Danial Azman",
+        "image": "../src/images/users/dan.jpg",
+        "faculty": "University of Wollongong",
+        "text":"This bot has been crucial to my success in my studies. By reducing the hassle it takes to check my timetable, it has allowed me to properly plan my schedule easily. Furthermore the daily reminders are crucial to ensuring that I turn for class on time the next day."
     }
 }
 
