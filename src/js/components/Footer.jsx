@@ -8,9 +8,6 @@ export default class AppFooter extends React.Component {
                 <a id="github-link" className="footer-icons" href="https://github.com/xlanor/SIM-UoW-Timetable-bot">
                     <img id="github-logo" src="../src/images/github-logo.png" alt="github" width="2%"/>
                 </a>
-                <a id="telegram-link" className="footer-icons" href="https://t.me/Uow_sim_tt_bot">
-                    <img id="telegram-icon" src="../src/images/telegram.png" alt="telegram" width="2%"/>
-                </a>
                 <a id="email-link" className="footer-icons" href="mailto:contact@jingk.ai">
                     <img id="email-icon" src="../src/images/email-icon.png" alt="contact" width="2%"/>
                 </a>

@@ -4,16 +4,12 @@ const getTextFromArray = (array_to_get_text,is_subtext)=>{
     let return_array = []
     for(let i=0; i < array_to_get_text.length; i++){
         let return_string = ""
-        if(!is_subtext){
-            return_string += "⇒ "
-        }
         return_string += array_to_get_text[i]
         if(is_subtext){
-            return_array.push(<span key={return_string}>{return_string}</span>)
+            return_array.push(<span key={return_string}>&#42; {return_string}</span>)
             return_array.push(<br key={i+return_string}/>)
         }else{
-            return_array.push(<i key={return_string}>{return_string}</i>)
-            return_array.push(<br key={i+return_string}/>)
+            return_array.push(<li key={return_string}>{return_string}</li>)
         }
     }
     return return_array;
@@ -40,9 +36,10 @@ export default class PictureElement extends React.Component {
                    
                     <div className="overlay-text">
                         <div className="overlay-head">
-                            <b>{this.props.title}</b>
+                            <div className="overlay-head-wrapper">
+                                <b id="picture-title">{this.props.title}</b>
+                            </div>
                         </div>
-                        <hr/>
                         <div className = "overlay-body">
                             {getTextFromArray(this.props.bullet_points,false)}
                         </div>

@@ -8,7 +8,7 @@ export default class License extends React.Component {
                     <div id="license-text-header">
                         <b>Open-Source</b>
                     </div>
-                    <hr id="license-text-divider"/>
+                    
                     <div id="license-text-body">
                         Licensed under a strong copyleft license, the&nbsp;
                         <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">GNU Affero General Public License v3</a>

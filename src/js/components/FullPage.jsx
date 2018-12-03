@@ -20,9 +20,9 @@ const videoDetails = [
         "Inline scrolling with Telegram"
       ],
       "sub_text":[
-          "* All timetables only includes classes and IS timetables",
-          "** Subject to Telegram rate limits",
-          "*** Does NOT automatically update"
+          " All timetables only includes classes and IS timetables",
+          " Subject to Telegram rate limits",
+          " Does NOT automatically update"
       ]
   },
   {
@@ -35,7 +35,7 @@ const videoDetails = [
       "Never miss another class again!"
     ],
     "sub_text":[
-        "* Does not guarantee a safeguard against oversleeping"
+        " Does not guarantee a safeguard against oversleeping"
     ]
   },
   {
@@ -54,8 +54,7 @@ const videoDetails = [
     "webm":"../src/videos/sim_navigation.webm",
     "bullet_points":[
       "No more suffering with an interface clearly not designed for mobile",
-      "Data is cached locally in mongoDB",
-      "JSON endpoints with JWT authentication is being considered"
+      "Data is cached locally in mongoDB"
     ],
     "sub_text":[]
   }

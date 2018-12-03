@@ -37,7 +37,7 @@ export default class AppMainPage extends React.Component {
                 <div id="main-page-title">
                     <b>Hera</b>
                 </div>
-                <hr id="main-page-split"/>
+                {/*<hr id="main-page-split"/> */}
                 <div className="main-page-sub-text">
                     Current: {this.state.versionLoaded}
                 </div>

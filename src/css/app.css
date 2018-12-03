@@ -35,18 +35,13 @@ body{
     color: white;
     font-family: Raleway;
 }
-#main-page-split{
-    width: auto;
-    margin-right: 60.5%;
-    border: none;
-    background-color: #a1a3a3;
-    color: #a1a3a3;
-    height: 2px;
-}
 #main-page-title{
     font-size: 5em;
+    display: inline;
+    border-bottom: 1px solid;
 }
 .main-page-sub-text{
+    margin-top:1.5%;
     color: #a1a2a3;
     font-size: 0.8em;
 }
@@ -96,14 +91,23 @@ a:visited{
     font-size: 2em;
     text-align: center;
 }
+.overlay-head-wrapper{
+    display: inline;
+    border-bottom: 1px solid;
+}
 .overlay-body{
     padding-left:10%;
+    margin-top:5%;
 }
 .overlay-subtext{
     font-style: italic;
     padding-left:10%;
     padding-top: 10%;
     font-size: 0.7em;
+}
+li {
+    margin: 0;
+    padding: 0.2em;
 }
 .autoplayVideo{
     float: left;
@@ -133,11 +137,16 @@ a:visited{
 }
 #license-text-header{
     font-size: 3em;
+    display:inline;
+    border-bottom: 1px solid;
 }
 #license-text{
     width:30%;
     padding-left:10%;
     float:left
+}
+#license-text-body{
+    padding-top: 5%;
 }
 #license-text-divider{
 
