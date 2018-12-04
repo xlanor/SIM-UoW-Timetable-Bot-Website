@@ -1,17 +1,17 @@
-@import url("../css/fonts.css");
-body{
-    background-color:#282c34;
-    margin: 0;
-}
 
-/* 
-Default:
-##Device = Most of the Smartphones Mobiles (Portrait)
-##Screen = B/w 320px to 479px
-*/
+/* Begin header related css declarations */
+#header-div{
 
-#header-div > div{
-    display: inline;
+    float: none;
+    clear: both;
+    background-color: transparent;
+    color: white;
+    font-family: Raleway;
+    position: fixed;
+    Width: 100%;
+    top: 0;
+    margin-left:60%;
+    margin-top:2%;
 }
 #anchor_link{
     color: #a1a3a3;
@@ -26,23 +26,14 @@ Default:
 }
 /* End header related css declarations */
 /* Begin main-page related css declarations */
-
-a:link{
-    color: pink;
-}
-a:visited{
-    color:pink;
-}
 #main-page-div{
-    text-align: center;
     background-color: #282c34;
     color: white;
     font-family: Raleway;
-    font-size: 1em;
 }
 #main-page-title{
+    font-size: 5em;
     display: inline;
-    font-size: 3em;
     border-bottom: 1px solid;
 }
 .main-page-sub-text{
@@ -51,15 +42,23 @@ a:visited{
     font-size: 0.8em;
 }
 #main-page-text-group{
-    max-width: 100%;
+    float: left;
+    max-width: 30%;
+    padding-top: 7%;
     padding-left:10%;
     padding-bottom:5%;
-    padding-right:10%;
+}
+a:link{
+    color: pink;
+}
+a:visited{
+    color:pink;
 }
 #main-page-image{
-    max-width: 100%;
-    padding-left:15%;
-    padding-right: 15%;
+    float: left;
+    max-width: 45%;
+    padding-left:5%;
+    padding-bottom:5%;
 }
 #ipad_image{
     max-width: 100%;
@@ -229,102 +228,3 @@ li {
     color: #a1a3a3;
 }
 /* End testimonial related css declarations */
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-@media only screen and (min-width: 1281px) {
-    #header-div{
-
-        float: none;
-        clear: both;
-        background-color: transparent;
-        color: white;
-        font-family: Raleway;
-        position: fixed;
-        Width: 100%;
-        top: 0;
-        margin-left:60%;
-        margin-top:2%;
-    }
-    #main-page-image{
-        float: left;
-        max-width: 45%;
-        padding-left:5%;
-        padding-bottom:5%;
-        padding-right: 0;
-    }
-    #main-page-title{
-        font-size: 5em;
-        display: inline;
-        border-bottom: 1px solid;
-    }
-
-    #main-page-text-group{
-        float: left;
-        max-width: 30%;
-        padding-top: 7%;
-        padding-left:10%;
-        padding-bottom:5%;
-    }
-    
-
-    /**/
-}
-  
-
-
-/* 
-##Device = Most of the Smartphones Mobiles (Portrait)
-##Screen = B/w 320px to 479px
-@import url("../css/mobile.css");
-*/
-@media only screen and  (min-width: 320px) and (max-width: 480px) {
-    /* Begin header related css declarations */
-    #header-div{
-        float: none;
-        clear: both;
-        background-color: transparent;
-        color: white;
-        font-family: Raleway;
-        font-size: 0.7em;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-justify-content: space-around;
-            -ms-flex-pack: distribute;
-                justify-content: space-around;
-        padding-top: 3%;
-        top: 0;
-        width: 100%;
-        position: fixed;
-        box-shadow: 0 -5px 5px -5px #333;
-    }
-}
-@media only screen and  (min-width: 320px) and (max-width: 480px) and (max-height: 800px)
-{
-    
-    #main-page-div{
-        font-size: 0.9em;
-    }
-    #main-page-title{
-        font-size: 2em;
-    }
-    .main-page-sub-text{
-        font-size: 0.8em;
-    }
-}
-@media only screen and  (min-width: 320px) and (max-width: 480px) and (max-height: 600px)
-{
-    
-
-    #main-page-div{
-        font-size: 0.8em;
-        padding-bottom:20%;
-    }
-}
-

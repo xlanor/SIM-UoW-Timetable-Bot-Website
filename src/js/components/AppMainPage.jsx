@@ -33,6 +33,9 @@ export default class AppMainPage extends React.Component {
       
       return (
         <div id="main-page-div">
+            <div id="main-page-image">
+                <img id="ipad_image" src="./src/images/hera.png"/>
+            </div>
             <div id="main-page-text-group">
                 <div id="main-page-title">
                     <b>Hera</b>
@@ -55,9 +58,6 @@ export default class AppMainPage extends React.Component {
                     The source code can be found on&nbsp;
                      <a id="gh_link" href="https://github.com/xlanor/SIM-UoW-Timetable-bot" alt="github-url">Github</a>
                 </div>
-            </div>
-            <div id="main-page-image">
-                <img id="ipad_image" src="./src/images/hera.png"/>
             </div>
         </div>
       );
