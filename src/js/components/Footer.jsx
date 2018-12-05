@@ -6,10 +6,10 @@ export default class AppFooter extends React.Component {
         <div id="footer-div" style={{ textAlign: 'center' }}>
             <div id="logo-div">
                 <a id="github-link" className="footer-icons" href="https://github.com/xlanor/SIM-UoW-Timetable-bot">
-                    <img id="github-logo" src="../src/images/github-logo.png" alt="github" width="2%"/>
+                    <img className="footer_logo" src="../src/images/github-logo.png" alt="github" />
                 </a>
                 <a id="email-link" className="footer-icons" href="mailto:contact@jingk.ai">
-                    <img id="email-icon" src="../src/images/email-icon.png" alt="contact" width="2%"/>
+                    <img className="footer_logo" src="../src/images/email-icon.png" alt="contact" />
                 </a>
             </div>
             <hr className="footer-divider" />
