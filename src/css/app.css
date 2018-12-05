@@ -51,9 +51,6 @@ a:visited{
 }
 #main-page-text-group{
     max-width: 100%;
-    padding-left:10%;
-    padding-bottom:5%;
-    padding-right:10%;
 }
 #main-page-image{
     max-width: 100%;
@@ -120,17 +117,16 @@ li {
     background-color: #282c34;
     color: white;
     font-family: Raleway;
-    padding-bottom: 25%;
 }
 #license-text-header{
-    font-size: 3em;
+    font-size: 2em;
     display:inline;
     border-bottom: 1px solid;
 }
 #license-text{
-    width:30%;
-    padding-left:10%;
-    float:left
+    margin-top:10%;
+    margin-left:10%;
+    margin-right:10%;
 }
 #license-text-body{
     padding-top: 5%;
@@ -145,10 +141,9 @@ li {
     height: 2px;
 }
 #license-image{
-    width:35%;
-    float:left;
-    padding-left:12%;
-    padding-top:4%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:15%;
 }
 #agplv3{
     max-width: 100%;
@@ -198,30 +193,23 @@ li {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-
-    float: left;
 }
 .user-image{
     width:400px;
     height: auto;
 }
 .user-testimonial{
-    width:50%;
-    float: left;
-}
-.user-testimonial{
     color: white;
     font-family: Raleway;
-    margin-left:10%;
-    margin-top:5%;
 }
 .user-testimonial-name{
-    font-size: 3em;
+    font-size: 1em;
 }
 .user-testimonial-faculty{
     color: #a1a3a3;
 }
 /* End testimonial related css declarations */
+
 
 /* 
   ##Device = Desktops
@@ -285,38 +273,77 @@ li {
         padding-left:10%;
     }
     /* End picture related css declarations */
-    /**/
+    #license-div{
+        float:none;
+        clear: both;
+        background-color: #282c34;
+        color: white;
+        font-family: Raleway;
+        padding-bottom: 25%;
+    }
+    #license-text-header{
+        font-size: 3em;
+        display:inline;
+        border-bottom: 1px solid;
+    }
+    #license-text{
+        width:30%;
+        float: left;
+        padding-left:10%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
+    }
+    #license-text-body{
+        padding-top: 5%;
+    }
+    #license-text-divider{
+    
+        width: auto;
+        margin-right: 42%;
+        border: none;
+        background-color: #a1a3a3;
+        color: #a1a3a3;
+        height: 2px;
+    }
+    #license-image{
+        width: 35%;
+        float: left;
+        padding-left:12%;
+        padding-top:4%;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    #agplv3{
+        max-width: 100%;
+    }
+    /* End license related css declarations*/
+    /* Begin Carousel related css declarations */
+    .user-image-wrapper{
+        width:400px;
+        height: 400px;
+        float: left;
+    }
+    .user-testimonial{
+        float: left;
+        margin-left:10%;
+        margin-top:5%;
+        width:50%;
+    }
+    .user-testimonial-name{
+        font-size: 3em;
+    }
+
+    /* End Carousel related css declarations */
 }
   
 
 
 /* 
-##Device = Most of the Smartphones Mobiles (Portrait)
-##Screen = B/w 320px to 479px
-@import url("../css/mobile.css");
+##Device = Most of the Smartphones Mobiles (Portrait and Landscape)
 */
-@media only screen and (min-width: 320px) and (max-width : 370px){
-    /* Begin picture related css declarations */
-    .autoplayVideo{
-        max-width: 60%;
-    }
-    .overlay-head{
-        font-size: 1.5em;
-    }
-    .overlay-body{
-        font-size: 0.7em;
-    }
-    .overlay-subtext{
-        font-size: 0.5em;
-    }
-    /* End picture related css declarations */
-    /* Begin footer related css declarations */
-    #footer-div{
-        font-size: 0.5em;
-    }
-    /* Begin footer related css declarations */
-}
-@media only screen and  (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width : 375px){
     /* Begin header related css declarations */
     #header-div{
         float: none;
@@ -341,6 +368,17 @@ li {
         box-shadow: 0 -5px 5px -5px #333;
     }
     /* End header related css declarations */
+    /* Begin main app related css declerations*/
+
+    #main-page-div{
+
+        text-align: center;
+    }
+    #main-page-text-group{
+        padding-left:10%;
+        padding-bottom:5%;
+        padding-right:10%;
+    }
     /* Begin picture related css declarations */
     .overlay-text{
        text-align: center;
@@ -350,6 +388,130 @@ li {
         text-align: center;
     }
     /* End picture related css declarations */
+    /* Begin picture related css declarations */
+    .autoplayVideo{
+        max-width: 60%;
+    }
+    .overlay-head{
+        font-size: 1.5em;
+    }
+    .overlay-body{
+        font-size: 0.7em;
+    }
+    .overlay-subtext{
+        font-size: 0.5em;
+    }
+    /* End picture related css declarations */
+    /* Begin Licnese related CSS declarations */
+
+    #license-text{
+       font-size: 0.7em;
+    }
+    /* End lLicense related CSS declarations */
+    /* Begin Carousell related CSS declarations */
+    .user-image-wrapper{
+        margin-top:15%;
+        width:200px;
+        height: 200px;
+        margin-right: 0;
+    }
+    .fixed-width-wrapper{
+        width:200px;
+        display: inline-block;
+    }
+    .user-testimonial-name{
+        font-size: 1.5em;
+    }
+    .user-testimonial-text{
+        font-size: 0.7em;
+    }
+    .user-testimonial-faculty{
+        font-size: 1em;
+    }
+    .testimonial-indiv{
+        text-align: center;
+        padding-bottom:30%;
+    }
+    /* End Carousell related CSS declarations */
+    #license-div{
+        margin-bottom:20%;
+    }
+    /* Begin footer related css declarations */
+
+    #footer-div{
+        font-size: 0.5em;
+    }
+    /* Begin footer related css declarations */
+}
+@media only screen and  (min-width: 376px) and (max-width: 480px) {
+    /* Begin header related css declarations */
+    #header-div{
+        float: none;
+        clear: both;
+        background-color: transparent;
+        color: white;
+        font-family: Raleway;
+        font-size: 0.7em;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        padding-top: 3%;
+        top: 0;
+        width: 100%;
+        position: fixed;
+        box-shadow: 0 -5px 5px -5px #333;
+    }
+    /* End header related css declarations */
+    /* Begin main app related css declerations*/
+
+    #main-page-text-group{
+        padding-left:10%;
+        padding-bottom:5%;
+        padding-right:10%;
+    }
+    /* Begin picture related css declarations */
+    .overlay-text{
+       text-align: center;
+       margin-bottom: 5%;
+    }
+    .videoCont{
+        text-align: center;
+    }
+    /* End picture related css declarations */
+    /* Begin Carousell related CSS declarations */
+    .user-image-wrapper{
+        margin-top:15%;
+        width:300px;
+        height: 300px;
+        margin-right: 0;
+    }
+    .fixed-width-wrapper{
+        width:300px;
+        display: inline-block;
+    }
+    .user-testimonial-name{
+        font-size: 2em;
+    }
+    .user-testimonial-text{
+        font-size: 1em;
+    }
+    .user-testimonial-faculty{
+        font-size: 1.5em;
+    }
+    .testimonial-indiv{
+        text-align: center;
+        padding-bottom:30%;
+    }
+    /* End Carousell related CSS declarations */
+    #license-div{
+        margin-bottom:20%;
+    }
     /* Begin footer related css declarations */
     .footer_logo{
         width:7%;
@@ -382,4 +544,277 @@ li {
         padding-bottom:20%;
     }
 }
+@media only screen and (min-width: 569px) and (max-width: 896px) and (orientation : landscape) {
+     /* Begin header related css declarations */
+     #header-div{
+        float: none;
+        clear: both;
+        background-color: transparent;
+        color: white;
+        font-family: Raleway;
+        font-size: 0.7em;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        padding-top: 3%;
+        top: 0;
+        width: 100%;
+        position: fixed;
+        box-shadow: 0 -5px 5px -5px #333;
+    }
+    /* End header related css declarations */
+     /* Begin mainpage related css declarations */
+     #main-page-image{
+        float: left;
+        max-width: 42%;
+        padding-left:5%;
+        padding-top:5%;
+        padding-bottom:5%;
+        padding-right: 0;
+    }
+    #main-page-title{
+        font-size: 3em;
+        display: inline;
+        border-bottom: 1px solid;
+    }
 
+    #main-page-text-group{
+        float: left;
+        font-size: 0.75em;
+        max-width: 40%;
+        padding-top: 5%;
+        padding-left:5%;
+        padding-bottom:5%;
+    }
+    
+    /* End mainpage related css declarations */
+    /* Begin body related css declarations */
+
+    .autoplayVideo{
+        max-width: 20%;
+        padding-left:15%;
+        margin-top: -5%;
+        float: left;
+    }
+    .overlay-text{
+        margin-top:15%;
+        text-align: center;
+        margin-left:40%;
+        width: 60%;
+        font-size: 0.65em;
+    }
+    .overlay-head{
+        font-size: 1.5em;
+    }
+    .overlay-head-wrapper{
+        display: inline;
+        border-bottom: 1px solid;
+    }
+    .overlay-body{
+        margin-top:1%;
+    }
+    .overlay-subtext{
+        font-style: italic;
+        padding-top: 3%;
+        font-size: 0.7em;
+    }
+    li {
+        margin: 0;
+        padding: 0.2em;
+    }
+    /* End body related css declarations */
+    /* Begin License related css delcarations */
+    #license-text-header{
+        font-size: 2em;
+        display:inline;
+        border-bottom: 1px solid;
+    }
+    #license-text{
+        margin-top:3%;
+        margin-left:5%;
+        margin-right:5%;
+        font-size: 0.7em;
+        width:40%;
+        float: left;
+    }
+    #license-text-body{
+        padding-top: 1%;
+    }
+    #license-image{
+        margin-left:10%;
+        margin-right:5%;
+        margin-top:2%;
+        margin-bottom: 15%;
+        padding-top: 5%;
+        width:30%;
+        float: left;
+    }
+    #agplv3{
+        max-width: 100%;
+    }
+    /* End License related css declarations */
+    /* Begin Carousell related CSS declarations */
+    .user-image-wrapper{
+        width:200px;
+        height: 200px;
+        margin-right: 0;
+        margin-left: 5%;
+    }
+    .fixed-width-wrapper{
+        width:200px;
+        float: left;
+    }
+    .user-testimonial{
+        margin-top:1%;
+        margin-left:15%;
+        width:50%;
+        float: left;
+    }
+    .user-testimonial-name{
+        font-size: 1.5em;
+    }
+    .user-testimonial-text{
+        font-size: 0.75em;
+    }
+    .user-testimonial-faculty{
+        font-size: 1em;
+    }
+    .testimonial-indiv{
+        text-align: center;
+        max-width: 90%;
+    }
+    /* End Carousell related CSS declarations */
+}
+@media only screen and (min-width: 569px) and (max-width: 896px) and (max-height:400px) and (orientation : landscape) {
+    
+   /* Begin License related css delcarations */
+   #license-text{
+       margin-top:5%;
+
+       font-size: 0.6em;
+   }
+  
+    /* End License related css declarations */
+}
+
+@media only screen and (min-width : 321px) and  (max-width: 568px) and (orientation : landscape) {
+    /* Begin header related css declarations */
+    #header-div{
+        float: none;
+        clear: both;
+        background-color: transparent;
+        color: white;
+        font-family: Raleway;
+        font-size: 0.7em;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        padding-top: 3%;
+        top: 0;
+        width: 100%;
+        position: fixed;
+        box-shadow: 0 -5px 5px -5px #333;
+    }
+    /* End header related css declarations */
+     /* Begin mainpage related css declarations */
+     #main-page-image{
+        float: left;
+        max-width: 45%;
+        padding-left:5%;
+        padding-top:5%;
+        padding-bottom:5%;
+        padding-right: 0;
+    }
+    #main-page-title{
+        font-size: 2em;
+        display: inline;
+        border-bottom: 1px solid;
+    }
+
+    #main-page-text-group{
+        float: left;
+        font-size: 0.65em;
+        max-width: 40%;
+        padding-top: 5%;
+        padding-left:5%;
+        padding-right: 5%;
+        padding-bottom:5%;
+    }
+    /* End main-page related css declarations */
+    /* Begin body related css declarations */
+    .autoplayVideo{
+        max-width: 20%;
+        padding-left:15%;
+        margin-top: -7%;
+        float: left;
+    }
+    .overlay-text{
+        margin-top:10%;
+        text-align: center;
+        margin-left:30%;
+        width: 60%;
+        font-size: 0.65em;
+    }
+    .overlay-head{
+        font-size: 1.5em;
+    }
+    .overlay-head-wrapper{
+        display: inline;
+        border-bottom: 1px solid;
+    }
+    .overlay-body{
+        margin-top:1%;
+    }
+    .overlay-subtext{
+        font-style: italic;
+        padding-top: 3%;
+        font-size: 0.7em;
+    }
+    li {
+        margin: 0;
+        padding: 0.2em;
+    }
+    
+    /* End body related css declarations */
+    
+    /* Begin License related css delcarations */
+    #license-text-header{
+        font-size: 1.5em;
+        display:inline;
+        border-bottom: 1px solid;
+    }
+    #license-text{
+        margin-top:0%;
+        margin-left:5%;
+        margin-right:5%;
+        font-size: 0.6em;
+    }
+    #license-text-body{
+        padding-top: 1%;
+    }
+    #license-image{
+        margin-left:10%;
+        margin-right:5%;
+        margin-top:5%;
+        padding-top: 5%;
+        margin-bottom: 15%;
+        width:30%;
+        float: left;
+    }
+    #agplv3{
+        max-width: 100%;
+    }
+    /* End License related css declarations */
+}

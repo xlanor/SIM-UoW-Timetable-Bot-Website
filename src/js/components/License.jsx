@@ -4,6 +4,9 @@ export default class License extends React.Component {
     render() {
         return(
             <div id="license-div">
+                <div id="license-image">
+                    <img id="agplv3" src="../src/images/AGPLv3-white.png" alt="agpl"></img>
+                </div>
                 <div id="license-text">
                     <div id="license-text-header">
                         <b>Open-Source</b>
@@ -26,9 +29,6 @@ export default class License extends React.Component {
 
                         
                     </div>
-                </div>
-                <div id="license-image">
-                    <img id="agplv3" src="../src/images/AGPLv3-white.png" alt="agpl"></img>
                 </div>
             </div>
         );

@@ -55,9 +55,9 @@ export default class SimpleSlider extends React.Component {
       speed: 300,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplaySpeed:2000,
+      autoplaySpeed:3000,
       adaptiveHeight: true,
-      autoplay:true,
+      autoplay:false,
       arrows:false
     };
     return (

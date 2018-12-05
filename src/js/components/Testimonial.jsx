@@ -8,14 +8,15 @@ export default class Testimonial extends React.Component {
     render() {
       return (
           <div className="testimonial-indiv">
-                <div className="user-image-wrapper">
-                    <img className="user-image" src={this.props.image}/>
+                <div className="fixed-width-wrapper">
+                    <div className="user-image-wrapper">
+                        <img className="user-image" src={this.props.image}/>
+                    </div>
                 </div>
                 <div className = "user-testimonial">
                     <div className="user-testimonial-name">
                         <b>{this.props.name}</b>
                     </div>
-                    <br/>
                     <div className="user-testimonial-faculty">
                         <i>{this.props.faculty}</i>
                     </div>
