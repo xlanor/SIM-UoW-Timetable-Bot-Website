@@ -17,7 +17,7 @@ const testimonial_dict = {
     },
     "Vanessa":{
         "full_name":"Vanessa",
-        "image": "../src/images/users/vanessa.jpg",
+        "image": "../src/images/users/ray.jpg",
         "faculty": "University of Birmmingham",
         "text":"Before using the telegram bot, I always had to login to SIMConnect  weekly to check my timetable and screenshot it in case I forget my schedule. These screenshots often get lost in my other photos and I have to log back into SIMConnect - again! Thank you for saving me from all the hassle!"
     },
