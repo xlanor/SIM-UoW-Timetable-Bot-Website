@@ -216,7 +216,7 @@ li {
   ##Screen = 1281px to higher resolution desktops
 */
 @media only screen and (min-width: 1281px) {
-    /* Begin footer related css declarations */
+    /* Begin header related css declarations */
     #header-div{
 
         float: none;
@@ -863,4 +863,59 @@ li {
         max-width: 90%;
     }
     /* End Carousell related CSS declarations */
+}
+
+/*
+## Device = Most of tablets. 
+*/
+@media only screen and (min-width : 768px) and (max-width : 1280px) {
+   
+  /* Begin header related css declarations */
+  #header-div{
+    float: none;
+    clear: both;
+    background-color: transparent;
+    color: white;
+    font-family: Raleway;
+    font-size: 1.2em;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding-top: 3%;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 -5px 5px -5px #333;
+    }
+    /* End header related css declarations */
+    /* Begin mainpage related css declarations */
+    #main-page-div{
+        text-align: center;
+        margin-left:5%;
+        margin-right: 5%;
+    }
+    /* Begin picture related css declarations */
+    .wrapper-div{
+        text-align: center;
+    }
+    .autoplayVideo{
+        max-width: 60%;
+        margin-bottom: 5%;
+    }
+    .overlay-head{
+        font-size: 2em;
+    }
+    .overlay-body{
+        font-size: 1em;
+    }
+    .overlay-subtext{
+        font-size: 0.5em;
+    }
+    /* End picture related css declarations */
 }
