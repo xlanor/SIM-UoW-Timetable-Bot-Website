@@ -415,6 +415,10 @@ li {
         height: 200px;
         margin-right: 0;
     }
+    .user-image{
+        width:200px; /* you can use % */
+        height: auto;
+    }
     .fixed-width-wrapper{
         width:200px;
         display: inline-block;
@@ -490,6 +494,10 @@ li {
         width:300px;
         height: 300px;
         margin-right: 0;
+    }
+    .user-image{
+        width:300px; /* you can use % */
+        height: auto;
     }
     .fixed-width-wrapper{
         width:300px;
@@ -666,13 +674,17 @@ li {
         margin-right: 0;
         margin-left: 5%;
     }
+    .user-image{
+        width:200px; /* you can use % */
+        height: auto;
+    }
     .fixed-width-wrapper{
         width:200px;
         float: left;
     }
     .user-testimonial{
-        margin-top:1%;
-        margin-left:15%;
+        top: 2%;
+        padding-left: 5%;
         width:50%;
         float: left;
     }
@@ -838,6 +850,10 @@ li {
         margin-right: 0;
         margin-left: 5%;
     }
+    .user-image{
+        width:150px; /* you can use % */
+        height: auto;
+    }
     .fixed-width-wrapper{
         width:150px;
         margin-left:10%;
@@ -867,8 +883,8 @@ li {
 
 /*
 ## Device = Most of tablets. 
-*/
-@media only screen and (min-width : 768px) and (max-width : 1280px) {
+*/ 
+@media only screen and (min-width : 768px) and (max-width : 1280px) and (orientation : Portrait) {
    
   /* Begin header related css declarations */
   #header-div{
@@ -897,8 +913,15 @@ li {
     /* Begin mainpage related css declarations */
     #main-page-div{
         text-align: center;
-        margin-left:5%;
-        margin-right: 5%;
+        margin-left:10%;
+        margin-right: 10%;
+    }
+    #main-page-title{
+        font-size: 3em;
+    }
+
+    #main-page-text-group{
+        font-size: 1.5em;
     }
     /* Begin picture related css declarations */
     .wrapper-div{
@@ -912,10 +935,194 @@ li {
         font-size: 2em;
     }
     .overlay-body{
+        margin-top:2%;
+        font-size: 1.5em;
+    }
+    .overlay-subtext{
+        padding-top: 2%;
+        font-size: 1em;
+    }
+    /* End picture related css declarations */
+    /* Begin License related css delcarations */
+    #license-image{
+        
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        display: block;
+        width: 50%;
+    } 
+    
+    #license-text-header{
+        font-size: 2em;
+        display:inline;
+        border-bottom: 1px solid;
+    }
+    #license-text{
+        font-size: 1.3em;
+        text-align: center;
+    }
+    /* End License related css delcarations */
+    /* Begin Carousell related CSS declarations */
+    .user-image-wrapper{
+        width:400px;
+        height: 400px;
+        top:5%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .user-image{
+        width:400px; /* you can use % */
+        height: auto;
+    }
+    .user-testimonial{
+       float: none;
+       margin-right: 0;
+       padding-top: 5%;
+    }
+    .user-testimonial-name{
+        font-size: 2em;
+    }
+    .user-testimonial-text{
+        font-size: 1.5em;
+    }
+    .user-testimonial-faculty{
+        font-size: 1.3em;
+    }
+    .testimonial-indiv{
+        text-align: center;
+    }
+    /* End Carousell related CSS declarations */
+}
+@media only screen and (min-width : 897px) and (max-width : 1280px) and (orientation : landscape) {
+   
+      /* Begin header related css declarations */
+      #header-div{
+        float: none;
+        clear: both;
+        background-color: transparent;
+        color: white;
+        font-family: Raleway;
+        font-size: 0.7em;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        padding-top: 3%;
+        top: 0;
+        width: 100%;
+        position: fixed;
+        box-shadow: 0 -5px 5px -5px #333;
+    }
+    /* End header related css declarations */
+      /* Begin mainpage related css declarations */
+      #main-page-image{
+          padding-left: 5%;
+          padding-right: 5%;
+          float: left;
+          width: 50%;
+      }
+      #main-page-title{
+          font-size: 2em;
+      }
+  
+      #main-page-text-group{
+          font-size: 1em;
+          margin-right: 5%;
+      }
+      /* Begin picture related css declarations */
+    .wrapper-div{
+        text-align: center;
+        width: 90%;
+    }
+    .videoCont{
+        float:left;
+    }
+    .autoplayVideo{
+        max-width: 60%;
+        margin-bottom: 5%;
+    }
+    .overlay-text{
+        padding-top:10%;
+        margin-right: 10%;
+    }
+    .overlay-head{
+        font-size: 2em;
+    }
+    .overlay-body{
+        margin-top:2%;
         font-size: 1em;
     }
     .overlay-subtext{
-        font-size: 0.5em;
+        padding-top: 2%;
+        font-size: 0.7em;
     }
     /* End picture related css declarations */
-}
+      /* Begin License related css delcarations */
+      #license-text-header{
+        font-size: 2em;
+        display:inline;
+        border-bottom: 1px solid;
+    }
+    #license-text{
+        margin-top:-1%;
+        margin-left:5%;
+        margin-right:5%;
+        font-size: 1em;
+        width:40%;
+        float: left;
+    }
+    #license-text-body{
+        padding-top: 4%;
+    }
+    #license-image{
+        margin-left:10%;
+        margin-right:5%;
+        margin-top:2%;
+        margin-bottom: 15%;
+        padding-top: 5%;
+        width:30%;
+        float: left;
+    }
+    #agplv3{
+        max-width: 100%;
+    }
+      /* End License related css delcarations */
+      /* Begin Carousell related CSS declarations */
+      .user-image-wrapper{
+          width:400px;
+          height: 400px;
+          top:5%;
+          margin-right: 5%;
+          margin-bottom: 15%;
+          float:left;
+      }
+      .user-image{
+          width:400px; /* you can use % */
+          height: auto;
+      }
+      .user-testimonial{
+         float: none;
+         margin-right: 0;
+         padding-top: 10%;
+      }
+      .user-testimonial-name{
+          font-size: 2em;
+      }
+      .user-testimonial-text{
+          font-size: 1em;
+      }
+      .user-testimonial-faculty{
+          font-size: 1.3em;
+      }
+      .testimonial-indiv{
+          text-align: center;
+      }
+      /* End Carousell related CSS declarations */
+  }
+  
